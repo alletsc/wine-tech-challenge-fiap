@@ -15,8 +15,8 @@ lint:
 	@.venv/bin/flake8 --exclude=.venv,build
 
 fmt:
-	@.venv/bin/isort dundie tests integration
-	@.venv/bin/black dundie tests integration
+	@.venv/bin/isort app tests
+	@.venv/bin/black app tests
 
 test:
 	@.venv/bin/pytest -s

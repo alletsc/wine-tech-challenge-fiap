@@ -8,4 +8,4 @@ def load_data():
 def test_datraframe_loading():
     """Test that the dataframe is not empty."""
     df = load_data()
-    assert df.empty == False
+    assert not df.empty, "O DataFrame está vazio"
